@@ -1,0 +1,32 @@
+:host {
+  float: left;
+}
+
+.wrapper {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: black;
+}
+
+.wrapper .image {
+  width: 100%;
+  height: 100%;
+}
+
+:host([type="bag"]) .wrapper .image {
+  background-image: url('elements/footerButton/bag.svg')
+}
+
+:host([type="home"]) .wrapper .image {
+  background-image: url('elements/footerButton/home.svg')
+}
+
+:host([type="mail"]) .wrapper .image {
+  background-image: url('elements/footerButton/mail.svg')
+}
+
+:host([type="spells"]) .wrapper .image {
+  background-image: url('elements/footerButton/spells.svg')
+}

@@ -1,0 +1,149 @@
+.circle {
+  border-radius: 100000px;
+  overflow: hidden;
+}
+
+:host {
+  float: left;
+  margin: 5px;
+}
+
+:host([size="small"]) .root {
+  --padding: 2px;
+  --size: 24px;
+}
+
+.root {
+  --status-burn: rgb(255, 114, 0);
+  --status-frozen: rgb(23, 214, 255);
+  --status-posion: rgb(223, 0, 162);
+  --padding: 2px;
+  --size: 50px;
+  --inner-size: calc(var(--size) - calc(var(--padding) + var(--padding)));
+  --half-padding: calc(var(--padding) * 0.5);
+  height: var(--size);
+  width: var(--size);
+}
+
+.root .damage {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  width: var(--inner-size);
+  height: 0px;
+  background: darkgray;
+}
+
+.root .health {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  width: var(--inner-size);
+  height: var(--size);
+  background: lightgray;
+}
+
+.root .image {
+  margin: var(--padding);
+  margin-top: calc(calc(var(--size) - var(--padding)) * -1);
+  background-color: lightgrey;
+  height: var(--inner-size);
+  width: var(--inner-size);
+  background-image: radial-gradient(rgb(70, 70, 70), rgb(0, 0, 0))
+}
+
+.root .image .inner {
+  width: calc(var(--inner-size) - var(--padding));
+  /* calc(var(--size) - var(--padding)); */
+  height: calc(var(--inner-size) - var(--padding));
+  /* calc(var(--size) - var(--padding)); */
+  background-position-y: -2px;
+  margin: var(--half-padding);
+}
+
+/* All status colors and their combinations */
+
+@keyframes posion-frozen {
+  0% {
+    background-color: var(--status-posion);
+  }
+  50% {
+    background-color: var(--status-frozen);
+  }
+  100% {
+    background-color: var(--status-posion);
+  }
+}
+
+@keyframes posion-burn {
+  0% {
+    background-color: var(--status-posion);
+  }
+  50% {
+    background-color: var(--status-burn);
+  }
+  100% {
+    background-color: var(--status-posion);
+  }
+}
+
+@keyframes burn-frozen {
+  0% {
+    background-color: var(--status-burn);
+  }
+  50% {
+    background-color: var(--status-frozen);
+  }
+  100% {
+    background-color: var(--status-burn);
+  }
+}
+
+@keyframes posion-burn-frozen {
+  0% {
+    background-color: var(--status-posion);
+  }
+  33% {
+    background-color: var(--status-burn);
+  }
+  66% {
+    background-color: var(--status-frozen);
+  }
+  100% {
+    background-color: var(--status-posion);
+  }
+}
+
+:host([posion=""]) .root .health {
+  background-color: var(--status-posion);
+}
+
+:host([burn=""]) .root .health {
+  background-color: var(--status-burn);
+}
+
+:host([frozen=""]) .root .health {
+  background-color: var(--status-frozen);
+}
+
+:host([posion=""][frozen=""]) .root .health {
+  animation: posion-frozen;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+:host([posion=""][burn=""]) .root .health {
+  animation: posion-burn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+:host([burn=""][frozen=""]) .root .health {
+  animation: burn-frozen;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+:host([posion=""][burn=""][frozen=""]) .root .health {
+  animation: posion-burn-frozen;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}

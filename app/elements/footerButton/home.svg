@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;}
+	.st4{font-family:'Herb';}
+	.st5{font-size:7px;}
+	.st6{display:inline;fill:#FFFFFF;}
+	.st7{display:inline;fill:#5A5A5A;}
+</style>
+<g id="Layer_4" class="st0">
+	<rect class="st1" width="30" height="30"/>
+</g>
+<g id="Home">
+	<g>
+		<path class="st2" d="M21,6.97V4h-2v0.98L15,1L6.29,9.67H8V21h2v-7h4v7h8V9.67h1.71L21,6.97z M20,15h-4v-4h4V15z"/>
+	</g>
+	<rect x="3.75" y="23" class="st3" width="22.51" height="6"/>
+	<text transform="matrix(1 0 0 1 6.6459 28.5928)" class="st2 st4 st5">Home</text>
+</g>
+<g id="mail" class="st0">
+	<rect x="1" y="2" class="st6" width="28" height="20"/>
+	<polygon class="st7" points="15,8 1,2 15,10 29,2 	"/>
+	<text transform="matrix(1 0 0 1 8.0259 28.5615)" class="st6 st4 st5">Mail</text>
+</g>
+<g id="spells" class="st0">
+	<polygon class="st6" points="23.44,6.91 25.04,2.19 20.33,3.79 16.34,0.81 16.4,5.79 12.34,8.66 16.18,9.86 3.58,23.29 3.94,23.65 
+		17.37,11.05 18.57,14.89 21.44,10.83 26.42,10.89 	"/>
+	<text transform="matrix(1 0 0 1 6.7818 26.8711)" class="st6 st4 st5">Spells</text>
+</g>
+</svg>

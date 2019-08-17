@@ -1,0 +1,50 @@
+.wrapper {
+  --total-width: 200px;
+  --total-height: 15px;
+  --border-size: 2px;
+  margin: 1px;
+  width: var(--total-width);
+  height: var(--total-height);
+  overflow: hidden;
+  transition: width 0.512s;
+}
+
+:host([type="mp"]) .wrapper {
+  --total-width: 150px;
+}
+
+.wrapper .empty {
+  float: left;
+  width: var(--total-width);
+  margin-right: calc(var(--total-width) * -1);
+  height: var(--total-height);
+  background-image: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
+  transition: width 0.512s, margin 0.512s;
+}
+
+.wrapper .full {
+  float: left;
+  margin-top: var(--border-size);
+  width: calc(var(--total-width) - var(--border-size));
+  height: calc(var(--total-height) - calc(var(--border-size) * 2));
+  background-image: linear-gradient( rgb(170, 0, 0), rgb(255, 0, 0), rgb(170, 0, 0));
+  transition: width 0.512s;
+  border-top-right-radius: calc(var(--total-height) * 0.5);
+  border-bottom-right-radius: calc(var(--total-height) * 0.5);
+}
+
+:host([type="mp"]) .wrapper .full {
+  background-image: linear-gradient(rgb(0, 145, 205), rgb(0, 251, 252), rgb(0, 145, 205));
+}
+
+:host {
+  float: left;
+}
+
+:host([compact="true"]) .wrapper, :host([compact=""]) .wrapper {
+  --total-width: 100px;
+}
+
+:host([compact="true"][type="mp"]) .wrapper, :host([compact=""][type="mp"]) .wrapper {
+  --total-width: 75px;
+}

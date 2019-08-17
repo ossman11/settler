@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#FFFFFF;}
+	.st3{display:inline;fill:none;}
+	.st4{display:inline;fill:#FFFFFF;}
+	.st5{font-family:'Herb';}
+	.st6{font-size:7px;}
+	.st7{display:inline;fill:#5A5A5A;}
+	.st8{fill:none;stroke:#000000;stroke-width:0.8026;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;stroke:#000000;stroke-width:0.8026;stroke-miterlimit:10;}
+</style>
+<g id="Layer_4" class="st0">
+	<rect class="st1" width="30" height="30"/>
+</g>
+<g id="Home" class="st0">
+	<g class="st1">
+		<path class="st2" d="M21,6.97V4h-2v0.98L15,1L6.29,9.67H8V21h2v-7h4v7h8V9.67h1.71L21,6.97z M20,15h-4v-4h4V15z"/>
+	</g>
+	<rect x="3.75" y="23" class="st3" width="22.51" height="6"/>
+	<text transform="matrix(1 0 0 1 6.6459 28.5928)" class="st4 st5 st6">Home</text>
+</g>
+<g id="mail" class="st0">
+	<rect x="1" y="2" class="st4" width="28" height="20"/>
+	<polygon class="st7" points="15,8 1,2 15,10 29,2 	"/>
+	<text transform="matrix(1 0 0 1 8.0259 28.5615)" class="st4 st5 st6">Mail</text>
+</g>
+<g id="spells" class="st0">
+	<polygon class="st4" points="23.44,6.91 25.04,2.19 20.33,3.79 16.34,0.81 16.4,5.79 12.34,8.66 16.18,9.86 3.58,23.29 3.94,23.65 
+		17.37,11.05 18.57,14.89 21.44,10.83 26.42,10.89 	"/>
+	<text transform="matrix(1 0 0 1 6.7818 26.8711)" class="st4 st5 st6">Spells</text>
+</g>
+<g id="bag">
+	<path class="st8" d="M18.11,1.06h-6.23c-1.75,0-3.16,1.42-3.16,3.16v4.37h12.55V4.22C21.28,2.48,19.86,1.06,18.11,1.06z"/>
+	<rect x="5.8" y="6.5" class="st9" width="18.41" height="15.06"/>
+	<path class="st9" d="M20.23,14.87H9.77c-2.42,0-4.39-1.96-4.39-4.39V5.66h19.24v4.82C24.62,12.9,22.66,14.87,20.23,14.87z"/>
+	<path class="st9" d="M15.56,16.12h-1.11c-0.39,0-0.7-0.31-0.7-0.7v-1.11c0-0.39,0.31-0.7,0.7-0.7h1.11c0.39,0,0.7,0.31,0.7,0.7
+		v1.11C16.26,15.81,15.94,16.12,15.56,16.12z"/>
+	<text transform="matrix(1 0 0 1 9.645 27.614)" class="st5 st6">Bag</text>
+</g>
+</svg>

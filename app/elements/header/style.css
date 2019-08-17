@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  height: 60px;
+  background-color: lightskyblue;
+}
+
+.wrapper .bars {
+  --bars-width: 200px;
+  margin: 5px;
+  margin-left: -12px;
+  margin-top: 13px;
+  width: var(--bars-width);
+  height: 32px;
+  float: left;
+}
+
+:host([compact=""]) .wrapper .bars, :host([compact="true"]) .wrapper .bars {
+  --bars-width: 100px;
+}
